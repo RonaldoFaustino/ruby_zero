@@ -1,5 +1,6 @@
 Dado("que eu acessei a pagina de cadastro") do
-    pending # Write code here that turns the phrase above into concrete actions
+    visit 'https://marktasks.herokuapp.com/register'
+    sleep 3
   end
   
   Dado("possuo os seguintes dados:") do |table|
@@ -14,3 +15,5 @@ Dado("que eu acessei a pagina de cadastro") do
   Então("sou redirecionado para meu paineil de tarefas") do
     pending # Write code here that turns the phrase above into concrete actions
   end
+
+  253
