@@ -5,7 +5,7 @@ Funcionalidade: Cadastro
 	Posso Fazer meu cadastro no sistema
 	Para poder gerenciar as minhas tarefas
 
-    @doing
+    
 	Cenário: Cadastro simplificado
 
 	Dado que eu acessei a pagina de cadastro
@@ -16,6 +16,7 @@ Funcionalidade: Cadastro
 	Quando faço o meu cadastro
 	Então sou redirecionado para meu paineil de tarefas
 	
+
 	Cenário: Email não enviado	
 
 	Dado que eu acessei a pagina de cadastro
@@ -25,7 +26,7 @@ Funcionalidade: Cadastro
 			|Senha|123456|
 	Quando faço o meu cadastro
 	Então devo ver uma mensagem de alerta "Email é obrigatório."
-
+	
 	Cenário: Senha não informada	
 
 	Dado que eu acessei a pagina de cadastro
@@ -34,8 +35,8 @@ Funcionalidade: Cadastro
 			|Email|ohnirucse@yahoo.com.br|
 			|Senha||
 	Quando faço o meu cadastro
-	Então devo ver uma mensagem de alerta "Senha é obrigatório."
-
+	Então devo ver uma mensagem de alerta "Informe uma senha."
+	
 	Cenário: Minimo de caracteres para senha	
 
 	Dado que eu acessei a pagina de cadastro
