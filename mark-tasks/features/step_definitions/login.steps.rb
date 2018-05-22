@@ -5,10 +5,6 @@ Quando("faço login com {string} e {string}") do |email, senha|
     # find('input[placeholder="example@gmail.com"]').set email
     # find('input[type="password"]').set senha
     # find('button[id="btLogin"]').click
-
-    @login = LoginPage.new
-    @nav = NavBar.new
-    @tasks = TarefasPage.new 
     @login.load
     @login.logar(email, senha)
 
@@ -16,7 +12,7 @@ Quando("faço login com {string} e {string}") do |email, senha|
   end
   
   Então("sou autenticado com sucesso") do
-   expect(@nav.menu_usuario.text).to eql @email
+   expect(@tasks.nav.menu_usuario.text).to eql @email
   end
   
   Então("vejo meu painel de atividades") do

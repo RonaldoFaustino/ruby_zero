@@ -7,8 +7,8 @@ Dado("que estou autenticado com {string} e {string}") do |email, senha|
   end
   
   Dado("acesso meu Perfil") do
-    @nav.menu_usuario.click
-    @nav.meu_perfil.click
+    @tasks.nav.menu_usuario.click
+    @tasks.nav.meu_perfil.click
   end
   
   Quando("completo meu cadastro com {string} e {string}") do |empresa, cargo|

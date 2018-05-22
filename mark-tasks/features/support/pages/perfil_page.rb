@@ -1,5 +1,8 @@
+require_relative 'sections'
 
 class PerfilPage < SitePrism::Page
+    section :nav, NavBar, '#navbar'
+    
     element :formulario, '#user-settings-profile-edit-form'
     element :input_empresa, 'input[name="profile.company"]'
     element :combo_cargo, 'select[name$=job]'
