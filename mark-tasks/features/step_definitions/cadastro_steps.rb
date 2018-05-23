@@ -1,6 +1,6 @@
 Dado("que eu acessei a pagina de cadastro") do
     
-    visit 'https://marktasks.herokuapp.com/register'
+    visit '/register'
     sleep 3
   end
   

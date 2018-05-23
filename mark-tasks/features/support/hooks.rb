@@ -7,6 +7,11 @@ visit 'https://marktasks.herokuapp.com/api/reset/ohnirucse@yahoo.com.br?clean=fu
 @perfil = PerfilPage.new
 end
 
+Before('@auth') do 
+    @login.load
+    @login.logar('ohnirucse@msn.com', '123456')
+end
+
 After ('@logout') do
     @tasks.nav.bye
 end
