@@ -17,5 +17,7 @@ Dado("que eu tenho uma tarefa com os atributos:") do |table|
   end
   
   Então("devo ver este cadastrocom status {string}") do |status_tarefas|
-    expect(page).to have_content status_tarefas
+    #expect(page).to have_content status_tarefas
+    @tasks.wait_for_itens
+    expect(@tasks.itens.first).to have_content status_tarefas
   end

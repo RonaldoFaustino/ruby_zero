@@ -22,3 +22,7 @@ Quando("faço login com {string} e {string}") do |email, senha|
   Então("devo ver a mensagem {string}") do |mensagem|
     expect(@login.alert.text).to eql mensagem
   end
+
+  Então("não sou autenticado") do
+    expect(@tasks.has_no_titulo?).to be false
+  end

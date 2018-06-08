@@ -28,4 +28,6 @@ class TarefasPage < SitePrism::Page
 
     element :titulo, '.header-title'
     element :botao_novo, '#insert-button'
+    element :table_body, 'table tbody'
+    elements :itens, 'table tbody tr'
 end

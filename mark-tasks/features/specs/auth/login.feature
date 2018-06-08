@@ -13,7 +13,8 @@
         Esquema do Cenário: Tentatita de login
 
             Quando faço login com "<email>" e "<senha>"
-			Então devo ver a mensagem "<alerta>"
+            Então não sou autenticado
+			E devo ver a mensagem "<alerta>"
 
             Exemplos:
              | email                  | senha  | alerta                  |
