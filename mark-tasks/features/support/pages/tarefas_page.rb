@@ -16,10 +16,10 @@ class Adicionar < SitePrism::Section
             input_tags.send_keys :tab
         end
 
-
         salvar.click
-
-    end    
+    end
+    
+   
 end
 
 class TarefasPage < SitePrism::Page

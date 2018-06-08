@@ -13,11 +13,11 @@ Funcionalidade: Cadastro tarefas
             | data   | 31/03/2018                 |
            
         E eu quero taguear esta tarefas com:
-            | tag  |
-            | ruby|
-            |leitura|
-            |livro|
-            |estudar |
+           | tag     |
+           | ruby    |
+           | leitura |
+           | livro   |
+           | estudar |
         Quando faço o cadastro desta tarefa
         Então devo ver este cadastrocom status "Em andamento"
 

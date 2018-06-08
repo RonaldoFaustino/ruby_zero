@@ -1,6 +1,7 @@
 Dado("que eu tenho uma tarefa com os atributos:") do |table|
     @tarefas = table.rows_hash
     puts @tarefas
+    @tarefas['titulo'] ="#{@tarefas['titulo']} #{Faker::Lorem.characters(10)}"
   end
 
   Dado("eu quero taguear esta tarefas com:") do |table|
@@ -16,5 +17,5 @@ Dado("que eu tenho uma tarefa com os atributos:") do |table|
   end
   
   Então("devo ver este cadastrocom status {string}") do |status_tarefas|
-    expect(page).to have.content status_tarefas
+    expect(page).to have_content status_tarefas
   end
