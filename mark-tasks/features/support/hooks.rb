@@ -5,6 +5,8 @@ visit 'https://marktasks.herokuapp.com/api/reset/ohnirucse@yahoo.com.br?clean=fu
 @login = LoginPage.new
 @tasks = TarefasPage.new 
 @perfil = PerfilPage.new
+
+page.current_window.resize_to(1280, 800)
 end
 
 Before('@auth') do 
