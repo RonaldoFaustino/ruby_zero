@@ -22,3 +22,19 @@ Dado("que estou autenticado com {string} e {string}") do |email, senha|
   Então("vejo a mensagem {string}") do |mensagem|
     expect(@perfil.formulario).to have_content mensagem
   end
+
+
+  #Upload
+
+  Dado('que eu tenho uma foto muito bonita') do
+    # @minha_foto = File.join(Dir.pwd, 'features/support/fixtures/foto1.png')
+    @minha_foto = File.join(Dir.pwd, 'features/support/fixtures/bin.jpg')
+  end
+  
+  Quando('faço o upload da mina foto') do
+    @perfil.upload(@minha_foto)
+  end
+  
+  Então('devo ver a mensagem de upload com o texto {string}') do |mensagem|
+    expect(@perfil.formulario).to have_content mensagem
+  end

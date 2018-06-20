@@ -15,4 +15,9 @@ class PerfilPage < SitePrism::Page
         combo_cargo.find('option', text: cargo).select_option
         salvar.click
     end
+
+    def upload(foto)
+        attach_file('profile-avatar', foto)
+    end
+
 end

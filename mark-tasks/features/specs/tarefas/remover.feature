@@ -5,7 +5,7 @@ Funcionalidade:  Remover tarefa
     Sendo um usuario cadastrado
     Posso excluir  uma tarefa indesejada
 
-    @auth @remover
+    @auth @remover @logout                  
     Cenário: Remover uma tarefa indesejada
 
         Dado que eu tenho uma tarefa cadastrada 
@@ -13,7 +13,7 @@ Funcionalidade:  Remover tarefa
         E confirmo a solicitaçao
         Então esta tarefa não deve ser  exibida na lista 
     
-    @auth @cancela
+    @auth @cancela @logout
     Cenário: Desistir da remoção
 
         Dado que eu tenho uma tarefa cadastrada 
