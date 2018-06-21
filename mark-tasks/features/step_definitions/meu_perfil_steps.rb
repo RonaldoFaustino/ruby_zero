@@ -27,7 +27,7 @@ Dado("que estou autenticado com {string} e {string}") do |email, senha|
   #Upload
 
   Dado('que eu tenho uma foto muito bonita') do
-    # @minha_foto = File.join(Dir.pwd, 'features/support/fixtures/foto1.png')
+    # @minha_foto = File.join(Dir.pwd, '/features/support/fixtures/foto1.png')
     @minha_foto = File.join(Dir.pwd, 'features/support/fixtures/bin.jpg')
   end
   

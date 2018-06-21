@@ -5,7 +5,7 @@ Funcionalidade: Minha foto
     Sendo um usuário cadastrado
     Posso fazer upload da minha foto
 
-    @auth @foto
+    @auth @foto @logout
     Cenário: Carregar minha foto
 
         Dado que eu tenho uma foto muito bonita

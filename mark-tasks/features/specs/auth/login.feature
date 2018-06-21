@@ -3,7 +3,7 @@
 		Para que soemnte eu possa ver minhas tarefas
 		Sendo um usuário
 		Posso logar no sistema com meus dados de acesso previamente cadastrados
-        @login @logout
+        @login @logout @smoke
 		Cenário: Login do usuário
 
 			Quando faço login com "ohnirucse@msn.com" e "123456"

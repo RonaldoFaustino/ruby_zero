@@ -5,7 +5,7 @@ Funcionalidade: Cadastro
 	Posso Fazer meu cadastro no sistema
 	Para poder gerenciar as minhas tarefas
 
-    
+    @smoke
 	Cenário: Cadastro simplificado
 
 	Dado que eu acessei a pagina de cadastro

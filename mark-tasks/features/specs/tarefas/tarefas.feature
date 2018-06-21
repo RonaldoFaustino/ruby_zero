@@ -5,7 +5,7 @@ Funcionalidade: Cadastro tarefas
     Sendo um usuário organizado
     Posso cadastrar novas tarefas
 
-    @nova_tasks @auth @logout
+    @nova_tasks @auth @logout @smoke
     Cenário: Nova tarefa
 
         Dado que eu tenho uma tarefa com os atributos:
