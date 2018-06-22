@@ -5,7 +5,7 @@ Dado("que eu acessei a pagina de cadastro") do
   end
   
   Dado("possuo os seguintes dados:") do |table|
-    puts @cadastro = table.rows_hash
+    @cadastro = table.rows_hash #puts
   end
   
   Quando("faço o meu cadastro") do

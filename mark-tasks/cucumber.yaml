@@ -1,0 +1,7 @@
+---
+default: --format progress -p html -p chrome_headless
+# mostra a doc no terminal e no html //default: --format pretty -p html
+html: --format html --out=logs/features.html
+chrome: BROWSER=chrome
+#firefox: BROWSER=firefox
+chrome_headless: BROWSER=chrome_headler

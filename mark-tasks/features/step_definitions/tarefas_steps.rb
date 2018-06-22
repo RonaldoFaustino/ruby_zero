@@ -1,6 +1,6 @@
 Dado("que eu tenho uma tarefa com os atributos:") do |table|
     @tarefas = table.rows_hash
-    puts @tarefas
+    @tarefas #puts
     @tarefas['titulo'] ="#{@tarefas['titulo']} #{Faker::Lorem.characters(10)}"
   end
 
@@ -15,7 +15,7 @@ Dado("que eu tenho uma tarefa com os atributos:") do |table|
   end
   
   Quando("faço o cadastro desta tarefa") do
-    puts @tags
+    @tags #puts
     @tasks.botao_novo.click
     @tasks.adicionar.nova(@tarefas, @tags)  
  
